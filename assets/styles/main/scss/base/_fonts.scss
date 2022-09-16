@@ -1,0 +1,20 @@
+//font-face-en 1
+@font-face 
+{
+  	font-family: $font-l;
+  	src: url('../../../../fonts/SourceSansPro-Light.ttf');
+}
+
+//font-face-en 2
+@font-face 
+{
+    font-family: $font-m;
+    src: url('../../../../fonts/SourceSansPro-Regular.ttf');
+}
+
+//font-face-en 3
+@font-face 
+{
+    font-family: $font-b;
+    src: url('../../../../fonts/SourceSansPro-Bold.ttf');
+}

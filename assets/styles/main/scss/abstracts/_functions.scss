@@ -1,0 +1,6 @@
+﻿@function toRem($value) {
+    @if type-of($value == number)
+    {
+        @return ($value / 16) * 1rem;
+    }
+}
