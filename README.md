@@ -1,9 +1,19 @@
 # derma-task
 
-### Code on branch dev
 
-### Open index.html to display home page
+### - To display home page open:
+```
+ index.html 
+```
 
-### Gulp: Convert Scss to css, add autoprefixer and compresser
-- install Gulp ^4.0.2
-- Run "gulp" command to start watcher
+### - Code on:
+```
+branch dev
+```
+
+### - Gulp: 
+> Convert Scss to css, add autoprefixer and compresser
+```
+1- install Gulp ^4.0.2
+2- Run "gulp" command to start watcher
+```
