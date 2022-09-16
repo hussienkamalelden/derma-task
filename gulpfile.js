@@ -8,12 +8,12 @@ const gulp = require('gulp'),
 //Convert Scss to css, add autoprefixer and compresser
 gulp.task("css", function () {
     return gulp.src('./assets/styles/styles.scss')
-        .pipe(autoprefixer())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./assets/styles/css'));
 });
 
 //watch all tasks
 gulp.task("default", function () {
-    gulp.watch('./assets/styles/styles.scss', gulp.series('css'));
+    gulp.watch('./assets/styles/**/*.scss', gulp.series('css'));
 });

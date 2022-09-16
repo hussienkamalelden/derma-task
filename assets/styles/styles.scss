@@ -1,6 +1,11 @@
-.test{
-    background-color: yellow;
-    transform: rotate(180deg);
-    transition: all 4s ease; 
-    display: flex;
-}
+//abstracts
+@import './main/scss/abstracts/all';
+
+//base
+@import './main/scss/base/all';
+
+//layout
+@import './main/scss/layout/all';
+
+//homepage
+@import './main/scss/homepage/all';
