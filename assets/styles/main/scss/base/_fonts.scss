@@ -1,18 +1,25 @@
-//font-face-en 1
+//font-face Light
 @font-face 
 {
   	font-family: $font-l;
   	src: url('../../fonts/SourceSansPro-Light.ttf');
 }
 
-//font-face-en 2
+//font-face Regular
 @font-face 
 {
-    font-family: $font-m;
+    font-family: $font-r;
     src: url('../../fonts/SourceSansPro-Regular.ttf');
 }
 
-//font-face-en 3
+//font-face Medium
+@font-face 
+{
+    font-family: $font-m;
+    src: url('../../fonts/SourceSansPro-SemiBold.ttf');
+}
+
+//font-face Bold
 @font-face 
 {
     font-family: $font-b;
