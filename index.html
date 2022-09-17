@@ -38,6 +38,7 @@
                     <input class="search-bar" type="search" name="searchBar" id="searchBar" placeholder="SEARCH">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
+            </form>
         </div>
         </div>
     </header>
@@ -46,12 +47,22 @@
     <!-- Start NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light" id="main_navbar">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon menu-icon"></span>
+                <i class="fa fa-times close-icon" aria-hidden="true"></i>
+
             </button>
+            <a class="home-link d-lg-none d-block" href="#"><img class="main-logo" src="./assets/images/main_logo.svg"
+                    alt="Derma world logo"></a>
             <div class="collapse navbar-collapse nav-holder" id="navbarSupportedContent">
+                <form class="searchbar-form d-lg-none d-block" action="#" method="get">
+                    <div class="search-holder">
+                        <input class="search-bar" type="search" name="searchBar" id="searchBar" placeholder="SEARCH">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </form>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 lvl1">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Bedingungen</a>
@@ -61,14 +72,14 @@
                             Behandlungen
                         </a>
                         <ul class="dropdown-menu lvl2">
-                            <div class="container d-flex">
+                            <div class="container dropdown-box">
                                 <li class="nav-item dropdown nav-item-lvl2">
                                     <a class="dropdown-item dropdown-toggle" href="#" role="button"
                                         data-bs-toggle="dropdown">
                                         Adtralza
                                     </a>
                                     <ul class="dropdown-menu lvl3">
-                                        <div class="container d-flex">
+                                        <div class="container dropdown-box">
                                             <li class="nav-item-lvl3"><a class="dropdown-item" href="#">Overview</a>
                                             </li>
                                             <li class="nav-item-lvl3">

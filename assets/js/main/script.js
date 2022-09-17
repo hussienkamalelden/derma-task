@@ -22,3 +22,12 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 ////////////////End Scroll to top////////////////
+
+////////////////Start Close Nav In Responsive////////////////
+$(function () {
+    var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not(.dropdown-toggle)", null, function () {
+        navMain.collapse('hide');
+    });
+});
+////////////////End Close Nav In Responsive////////////////
