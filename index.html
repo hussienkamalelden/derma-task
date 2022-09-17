@@ -12,10 +12,9 @@
     <title>Derma World</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/styles/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/vendors/bootstrap/bootnavbar.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./assets/styles/vendors/font_awesome/all.min.css">
-    <!-- Normalize -->
-    <link rel="stylesheet" href="./assets/styles/vendors/normalize.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
@@ -29,13 +28,120 @@
     <!-- End button to top -->
 
     <!-- Start Header -->
-    <header id="home">
-        
+    <header id="home" class="d-lg-block d-none">
+        <div class="container d-flex justify-content-between">
+            <a class="home-link" href="#"><img class="main-logo" src="./assets/images/main_logo.svg" alt="Derma world logo"></a>
+            <form class="searchbar-form" action="#" method="get">
+                <div class="search-holder">
+                    <input class="search-bar" type="search" name="searchBar" id="searchBar" placeholder="SEARCH">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- End Header -->
 
     <!-- Start NavBar -->
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_navbar">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                    >
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                        >
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- End NavBar -->
 
     <!-- Start My Banner -->
@@ -94,6 +200,7 @@
     <script src="./assets/js/vendors/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="./assets/js/vendors/popper/popper.min.js"></script>
     <script src="./assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/vendors/bootstrap/bootnavbar.js"></script>
     <!-- JQuery -->
     <script src="./assets/js/vendors/jquery/jquery-3.5.1.js"></script>
     <!-- My JavaScript -->

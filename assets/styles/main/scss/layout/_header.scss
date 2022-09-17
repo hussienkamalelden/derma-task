@@ -1,0 +1,26 @@
+header{
+    padding: toRem(29px);
+    .home-link{
+        .main-logo{
+            width: 158px;
+        }
+    }
+    .searchbar-form{
+        width: 25%;
+        .search-holder{
+            border-radius: toRem(25.5px);
+            border: 1px solid rgba(var(--black-rgb), 0.2);
+            padding: toRem(8px) toRem(18px);
+            display: flex;
+            .search-bar{
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+            i{
+                align-self: center;
+                color: rgba(var(--black-rgb), 0.7);
+            }
+        }
+    }
+}
