@@ -136,7 +136,7 @@
     <!-- End NavBar -->
 
     <!-- Start My Banner -->
-    <article class="banner" id="banner">
+    <section class="banner" id="banner">
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -182,11 +182,11 @@
                 </div>
             </div>
         </div>
-    </article>
+    </section>
     <!-- End My Banner -->
 
     <!-- Start Services -->
-    <article class="services py-5" id="services">
+    <section class="services py-5" id="services">
         <div class="container">
             <div class="row">
                 <div class="services-holder col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
@@ -212,37 +212,84 @@
                 </div>
             </div>
         </div>
-    </article>
+    </section>
     <!-- End Services -->
 
     <!-- Start About -->
-    <article class="about" id="about">
+    <section class="about py-5" id="about">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 about-holder about-holder-1">
+                    <h2 class="about-main-title">Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
+                        and
+                        symptoms.</h2>
+                    <p class="about-desc">
+                        By specifically targeting the IL-13 cytokine, Adtralza® inhibits the interaction with type II
+                        receptors and prevents IL-13-induced inflammatory responses in the skin(1,2).
+                        <br><br>
+                        Adtralza® selectively modulates the dysregulated immune system by(1):
+                    </p>
+                    <ol>
+                        <li>Reducing markers of skin inflammation</li>
+                        <li>Improving markers of skin barrier integrity</li>
+                        <li>Reducing epidermal thickness</li>
+                    </ol>
+                    <div class="mt-3 d-flex flex-wrap">
+                        <button class="watch-video-link mb-1" data-bs-toggle="modal" data-bs-target="#openVideo">Watch
+                            the
+                            video</button>
+                        <span class="video-duration">Duration: 2:43</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 about-holder about-holder-2">
+                    <img class="about-img" src="./assets/images/about/about_img.jpg" alt="About Image">
+                </div>
+            </div>
         </div>
-    </article>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="openVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adtralza</h5>
+                    <button type="button" id="btn-close" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video id="myVideo" width="100%" height="100%" poster="./assets/images/about/placeholder.png"
+                        controls>
+                        <source src="./assets/images/about/about.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- End About -->
 
     <!-- Start Tools -->
-    <article class="tools" id="tools">
+    <section class="tools" id="tools">
         <div class="container">
         </div>
-    </article>
+    </section>
     <!-- End Tools -->
 
     <!-- Start Videos -->
-    <article class="videos" id="videos">
+    <section class="videos" id="videos">
         <div class="container">
 
         </div>
-    </article>
+    </section>
     <!-- End Videos -->
 
     <!-- Start References -->
-    <article class="references" id="references">
+    <section class="references" id="references">
         <div class="container">
 
         </div>
-    </article>
+    </section>
     <!-- End References -->
 
     <!-- Start Footer -->

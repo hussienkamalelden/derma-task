@@ -31,3 +31,17 @@ $(function () {
     });
 });
 ////////////////End Close Nav In Responsive////////////////
+
+
+////////////////Start Get Video Duration And Pause Video////////////////
+var vid = document.getElementById("myVideo"),
+    vidtext = document.querySelector(".video-duration"),
+    minutes = parseInt(vid.duration / 60, 10),
+    seconds = vid.duration % 60;
+
+vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
+
+$('#openVideo').on('hidden.bs.modal', function (e) {
+    vid.pause();
+})
+////////////////End Get Video Duration And Pause Video////////////////
