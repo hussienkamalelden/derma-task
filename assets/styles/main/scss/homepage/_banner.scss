@@ -44,8 +44,10 @@
                             transition: .2s all;
                             margin-bottom: 1rem;
                             display: inline-block;
+                            text-decoration: none;
                             &:hover{
                                 color: var(--secondary);
+                                text-decoration: underline;
                             }
                         }
                     }
