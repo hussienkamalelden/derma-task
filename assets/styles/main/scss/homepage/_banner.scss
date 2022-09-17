@@ -1,0 +1,128 @@
+.banner{
+    .swiper {
+        width: 100%;
+        height: 480px;
+        .swiper-slide{
+            position: relative;
+            z-index: 1;
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                opacity: .8;
+                background: linear-gradient(0deg, rgba(1,0,32,1) 0%, rgba(4,0,57,1) 18%, rgba(3,0,80,1) 43%, rgba(255,255,255,0) 84%, rgba(255,255,255,0) 100%);
+            }
+            .swiper-holder{
+                height: 100%;
+                position: relative;
+                z-index: 3;
+                .swiper-box{
+                    display: flex;
+                    .swiper-content{
+                        align-self: flex-end;
+                        width: 100%;
+                        .adtralza-logo{
+                            width: toRem(75px);
+                            margin-bottom: toRem(18px);
+                        }
+                        .swiper-content-desc{
+                            font-size: toRem(20px);
+                            font-style: italic;
+                            color: var(--white);
+                            font-family: $font-l;
+                            line-height: 1.2;
+                        }
+                        .swiper-content-desc-2{
+                            color: var(--primary);
+                        }
+                        .swiper-content-anchor{
+                            color: var(--black);
+                            font-size: toRem(16px);
+                            transition: .2s all;
+                            margin-bottom: 1rem;
+                            display: inline-block;
+                            &:hover{
+                                color: var(--secondary);
+                            }
+                        }
+                    }
+                    .adtralza-drug{
+                        max-width: 100%;
+                        height: 270px;
+                    }
+                }
+            }
+        }
+        .swiper-slide-1{
+            background-image: url('../../images/banner/doctor.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 80%;
+            .swiper-box-1{
+                order: 2;
+            }
+            .swiper-box-2{
+                order: 1;
+            }
+        }
+        .swiper-slide-2{
+            background-color: var(--grey-2);
+            .swiper-box-1{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .swiper-content-desc{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Start Media Query //
+@media (min-width: 992px){
+    .banner{
+        .swiper {
+            height: 480px;
+            .swiper-slide{
+                .overlay{
+                    background: linear-gradient(90deg, rgba(1,0,32,1) 0%, rgba(4,0,57,1) 18%, rgba(3,0,80,1) 43%, rgba(255,255,255,0) 84%, rgba(255,255,255,0) 100%);
+                }
+                .swiper-holder{
+                    .swiper-box{
+                        .swiper-content{
+                            width: 80%;
+                            align-self: center;
+                            .adtralza-logo{
+                                width: toRem(85px);
+                                margin-bottom: toRem(23px);
+                            }
+                            .swiper-content-desc{
+                                font-size: toRem(28px);
+                            }
+                            .swiper-content-anchor{
+                                font-size: toRem(18px);
+                            }
+                        }
+                        .adtralza-drug{
+                            height: 350px;
+                        }
+                    }
+                }
+            }
+            .swiper-slide-1{
+                background-position: 0 -50px;
+                .swiper-box-1{
+                    order: 1;
+                }
+                .swiper-box-2{
+                    order: 2;
+                }
+            }
+        }
+    }
+}
+// End Media Query //

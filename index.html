@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/styles/vendors/bootstrap/bootnavbar.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./assets/styles/vendors/font_awesome/all.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./assets/styles/vendors/swiper/swiper-bundle.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
 </head>
@@ -135,7 +137,50 @@
 
     <!-- Start My Banner -->
     <article class="banner" id="banner">
-        <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide-1">
+                    <div class="overlay"></div>
+                    <div class="container h-100">
+                        <div class="swiper-holder row">
+                            <div class="col-lg-6 col-12 swiper-box swiper-box-1">
+                                <div class="swiper-content">
+                                    <img class="adtralza-logo" src="./assets/images/banner/adtralza_logo.png"
+                                        alt="Adtralza Logo">
+                                    <p class="swiper-content-desc">
+                                        Adtralza® is a new treatment for adult patients with moderate-to-severe atopic
+                                        dermatitis (eczema) who are candidates for systemic therapy.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 swiper-box swiper-box-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-2">
+                    <div class="container h-100">
+                        <div class="swiper-holder row">
+                            <div class="col-lg-6 col-12 swiper-box swiper-box-1">
+                                <img class="adtralza-drug" src="./assets/images/banner/adtralza_drug.png"
+                                    alt="Adtralza Drug">
+                            </div>
+                            <div class="col-lg-6 col-12 swiper-box swiper-box-2">
+                                <div class="swiper-content">
+                                    <p class="swiper-content-desc swiper-content-desc-2">
+                                        Adtralza® is a new treatment for adult patients with moderate-to-severe atopic
+                                        dermatitis (eczema) who are candidates for systemic therapy.
+                                    </p>
+                                    <a class="swiper-content-anchor" href="#" target="_blank">
+                                        Learn more about how Adtralza® works and how to use it in treatment.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
     <!-- End My Banner -->
@@ -192,6 +237,9 @@
     <script src="./assets/js/vendors/bootstrap/bootnavbar.js"></script>
     <!-- JQuery -->
     <script src="./assets/js/vendors/jquery/jquery-3.5.1.js"></script>
+    <!-- Swiper -->
+    <script src="./assets/js/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors/swiper/initialize-swiper.js"></script>
     <!-- My JavaScript -->
     <script src="./assets/js/main/script.js"></script>
     <!-- End Scripts -->
