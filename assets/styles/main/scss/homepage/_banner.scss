@@ -34,6 +34,7 @@
                             color: var(--white);
                             font-family: $font-l;
                             line-height: 1.2;
+                            @include trim(4);
                         }
                         .swiper-content-desc-2{
                             color: var(--primary);

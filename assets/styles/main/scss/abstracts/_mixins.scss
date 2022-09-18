@@ -5,3 +5,10 @@
     flex-flow: $flow;
     flex-wrap: $wrap;
 }
+
+@mixin trim($number) {
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

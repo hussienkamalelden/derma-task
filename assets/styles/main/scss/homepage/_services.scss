@@ -9,10 +9,6 @@
             height: 180px;
             margin: 0 auto;
         }
-        .service-title,.service-desc,.service-link{
-            width: 80%;
-            margin: 0 auto;
-        }
         .service-title{
             color: var(--primary);
             font-size: toRem(18px);
@@ -24,33 +20,32 @@
             font-size: toRem(16px);
             font-family: $font-l;
             margin: 10px auto;
+            @include trim(4);
         }
-        .service-link{
-            color: var(--secondary);
-            font-size: toRem(16px);
-            margin-top: auto;
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+    }
+}
+.service-title,.service-desc,.service-link{
+    width: 80%;
+    margin: 0 auto;
+}
+.content-common-link{
+    color: var(--secondary);
+    font-size: toRem(16px);
+    margin-top: auto;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: var(--secondary);
     }
 }
 
 // Start Media Query //
 @media (min-width: 992px){
-    .services{
-        .services-holder{
-            .service-title{
-                font-size: toRem(18px);
-            }
-            .service-desc{
-                font-size: toRem(16px);
-                margin: 10px auto 20px;
-            }
-            .service-link{
-                font-size: toRem(16px);
-            }
-        }
+    .service-desc{
+        margin: 10px auto 20px;
+    }
+    .content-common-link{
+        margin-top: auto;
     }
 }
+// End Media Query //

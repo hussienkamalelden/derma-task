@@ -1,18 +1,6 @@
 .about{
     background-color: var(--grey-2);
     .about-holder{
-        .about-main-title{
-            font-size: toRem(28px);
-            font-family: $font-m;
-            color: var(--primary);
-            margin-bottom: 2rem;
-        }
-        .about-desc{
-            font-size: toRem(16px);
-            font-style: italic;
-            color: var(--black);
-            margin-bottom: .5rem;
-        }
         ol{
             li{
                 list-style: circle;
@@ -52,6 +40,18 @@
         height: 100%;
         object-fit: cover;
     }
+}
+.main-common-title{
+    font-size: toRem(28px);
+    font-family: $font-m;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+.content-common-desc{
+    font-size: toRem(16px);
+    font-style: italic;
+    color: var(--black);
+    margin-bottom: .5rem;
 }
 
 // Start Media Query //
