@@ -20,7 +20,7 @@ branch dev
 ```
 
 
-### - Technologies and libraries
+### - Technologies and libraries:
 ```
 HTML5 - CSS3 - Bootstrap 5 -Jquery - ES6 - Swiper.js - fontawesome - Gulp - SCSS
 ```
