@@ -39,7 +39,9 @@ var vid = document.getElementById("myVideo"),
     minutes = parseInt(vid.duration / 60, 10),
     seconds = vid.duration % 60;
 
-vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
+$(document).ready(function () {
+    vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
+});
 
 $('#openVideo').on('hidden.bs.modal', function (e) {
     vid.pause();

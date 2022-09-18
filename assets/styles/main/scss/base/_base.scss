@@ -10,10 +10,21 @@ html
   scroll-behavior: smooth;
   font-size: 16px;
 }
+html[data-font="size-sm"]
+{
+  font-size: 14px;
+}
+html[data-font="size-md"]
+{
+  font-size: 16px;
+}
+html[data-font="size-lg"]
+{
+  font-size: 18px;
+}
 body 
 {
   background-color: var(--white);
   font-family: $font-r;
-  font-size: 16px;
 }
 // End Media Query //

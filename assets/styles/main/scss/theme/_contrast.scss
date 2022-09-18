@@ -1,3 +1,16 @@
-﻿:root{
-    
+﻿.contrast:root{
+    --primary: #000;
+    --secondary: #000;
+    --secondary-2: #000;
+    --white: #fff;
+    --black: #000;
+    --black-rgb: 0,0,0;
+
+    --grey-1: #c6c7c7;
+    --grey-2: #d4d4d4;
+    --grey-3: #e4e4e4;
+    --grey-4: #a9abab;
+
+    --linear-gradient-desktop: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 18%, rgb(0, 0, 0) 43%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 0) 100%);
+    --linear-gradient-reponsive: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 43%, rgba(0,0,0,0) 84%, rgba(0,0,0,0) 100%);
 }

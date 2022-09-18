@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-font="size-md">
 
 <head>
     <!-- Required meta tags -->
@@ -37,6 +37,14 @@
         <div class="container d-flex justify-content-between">
             <a class="home-link" href="#"><img class="main-logo" src="./assets/images/main_logo.svg"
                     alt="Derma world logo"></a>
+            <div class="accessibility-box">
+                <i class="fa fa-adjust contrast-icon" aria-hidden="true"></i>
+                <div class="font-resize-holder">
+                    <span class="font-resize size-large">A</span>
+                    <span class="font-resize size-medium">A</span>
+                    <span class="font-resize size-small">A</span>
+                </div>
+            </div>
             <form class="searchbar-form" action="#" method="get">
                 <div class="search-holder">
                     <input class="search-bar" type="search" name="searchBar" id="searchBar" placeholder="SEARCH">
@@ -61,6 +69,14 @@
             <a class="home-link d-lg-none d-block" href="#"><img class="main-logo" src="./assets/images/main_logo.svg"
                     alt="Derma world logo"></a>
             <div class="collapse navbar-collapse nav-holder" id="navbarSupportedContent">
+                <div class="accessibility-box d-lg-none d-flex">
+                    <i class="fa fa-adjust contrast-icon" aria-hidden="true"></i>
+                    <div class="font-resize-holder">
+                        <span class="font-resize size-large">A</span>
+                        <span class="font-resize size-medium">A</span>
+                        <span class="font-resize size-small">A</span>
+                    </div>
+                </div>
                 <form class="searchbar-form d-lg-none d-block" action="#" method="get">
                     <div class="search-holder">
                         <input class="search-bar" type="search" name="searchBar" id="searchBar" placeholder="SEARCH">
@@ -474,6 +490,8 @@
     <script src="./assets/js/vendors/aos/initialize-aos.js"></script>
     <!-- My JavaScript -->
     <script src="./assets/js/main/script.js"></script>
+    <script src="./assets/js/main/contrast.js"></script>
+    <script src="./assets/js/main/resize.js"></script>
     <!-- End Scripts -->
     <script>
         AOS.init();

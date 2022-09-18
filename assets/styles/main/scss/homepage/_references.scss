@@ -6,4 +6,7 @@
         color: var(--primary);
         box-shadow: none;
     }
+    .accordion-button:not(.collapsed){
+        background-color: var(--grey-4);
+    }
 }
