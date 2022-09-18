@@ -22,6 +22,6 @@ branch dev
 
 ### - Technologies and libraries:
 ```
-HTML5 - CSS3 - Bootstrap 5 -Jquery - ES6 - Swiper.js - fontawesome - Gulp - SCSS
+HTML5 - CSS3 - ES6 - SCSS - Bootstrap 5 - Jquery - Swiper.js - FontAwesome - Gulp - AOS
 ```
 :tada: :tada:
