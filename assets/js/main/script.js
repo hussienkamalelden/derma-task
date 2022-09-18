@@ -40,7 +40,11 @@ $(document).ready(function () {
         minutes = parseInt(vid.duration / 60, 10),
         seconds = vid.duration % 60;
 
-    vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
+    if (typeof (minutes) == NaN || typeof (minutes) == NaN) {
+        vidtext.innerHTML = `Duration: 5:34`;
+    } else {
+        vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
+    }
 
     $('#openVideo').on('hidden.bs.modal', function (e) {
         vid.pause();

@@ -39,6 +39,8 @@ header{
         cursor: pointer;
         border: 2px solid var(--primary);
         color: var(--primary);
+        display: flex;
+        text-decoration: none;
     }
     .font-resize-holder{
         align-self: center;
@@ -50,6 +52,7 @@ header{
             cursor: pointer;
             color: var(--secondary);
             font-family: $font-m;
+            text-decoration: none;
         }
         .size-small{
             font-size: 16px;
