@@ -40,7 +40,7 @@ $(document).ready(function () {
         minutes = parseInt(vid.duration / 60, 10),
         seconds = vid.duration % 60;
 
-    if (typeof (minutes) == NaN || typeof (minutes) == NaN) {
+    if (isNaN(minutes) || isNaN(seconds)) {
         vidtext.innerHTML = `Duration: 5:34`;
     } else {
         vidtext.innerHTML = `Duration:  ${minutes}:${Math.floor(seconds)}`;
